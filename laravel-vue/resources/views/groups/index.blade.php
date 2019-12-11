@@ -8,7 +8,7 @@
             </div>
             
                
-                <div class="col-md-4">
+            <div class="col-md-4">
                 <form action="{{ url('/groups/search') }}" method="get">
                     <div class="input-group">
                         <input type="search" name="search" class="form-control" value="" placeholder="Enter to show all or input to filter" autofocus>
