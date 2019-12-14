@@ -121,12 +121,12 @@ class GroupController extends Controller
      * @param  \App\Group  $product
      * @return \Illuminate\Http\Response
      */
-    public function manage($groupid)
+    public function peoples($groupid)
     {
         //return view('groups.manage',compact('groupid'));
        
        $groups = Group::where('id', $groupid)->first();
        
-       return view('groups.manage',compact('groups'));
+       return view('peoples.index',compact('groups'));
     }
 }

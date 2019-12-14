@@ -3,7 +3,7 @@
 
 @section('content')
      
-{{$group->name}}
+
 
 <div class="row">
         <div class="col-md-5 margin-tb">
@@ -16,7 +16,7 @@
             </div>
                
             <div class="col-md-4">
-                <form action="{{ url('/groups/search') }}" method="get">
+                <form action="{{ url('/peoples/search') }}" method="get">
                     <div class="input-group">
                         <input type="search" name="search" class="form-control" value="" placeholder="Enter to show all or input to filter" autofocus>
                             <span class="input-group-append">
@@ -27,7 +27,7 @@
             </div>
 
             <div class="col-md-2">
-                <a class="btn btn-success" href="{{ route('groups.create') }}"> + New Student</a> 
+                <a class="btn btn-success" href="{{ url('/groups/'.$groups->id.'/peoples/create/' ) }}"> + New people..</a> 
             </div>
 
            

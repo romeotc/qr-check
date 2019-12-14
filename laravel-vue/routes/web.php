@@ -28,7 +28,11 @@ Route::prefix('login')->group(function () {
     Route::get('/{provider}/callback', 'Auth\LoginController@handleProviderCallback')->name('login.provider.callback');
 });
 Route::get('/groups/search', 'GroupController@search');
-Route::get('/groups/manage/{groupid}', 'GroupController@manage');
+Route::get('/groups/{groupid}/peoples/', 'PeopleController@index');
+Route::get('/groups/{groupid}/peoples/create/', 'PeopleController@create');
+
+
 Route::resource('groups','GroupController');
+Route::resource('groups/{groupid}/peoples','PeopleController');
 
 

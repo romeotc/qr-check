@@ -53,7 +53,7 @@
             <td>
                 <form action="{{ route('groups.destroy',$group->id) }}" method="POST">
                     <a class="btn btn-info" href="{{ route('groups.show',$group->id) }}">Show</a>
-                    <a class="btn btn-success" href="{{ url('\peoples/'.$group->id ) }}">Manage</a>
+                    <a class="btn btn-success" href="{{ url('groups/'.$group->id.'/peoples/' )}}">Manage</a>
                     <a class="btn btn-primary" href="{{ route('groups.edit',$group->id) }}">Edit</a>
 
                     @csrf

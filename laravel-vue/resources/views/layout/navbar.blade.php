@@ -7,14 +7,12 @@
           var d = new Date();
           document.getElementById("time").innerHTML = d.toLocaleTimeString();
         }
-        
-
-        
+               
 
         function myPer() {
            
               $.ajax({
-                url: "check", 
+                url: "http://localhost/laravel-vue/public/check", 
                 method:"GET"
                 
                
