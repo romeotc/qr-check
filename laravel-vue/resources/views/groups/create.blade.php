@@ -37,7 +37,28 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Detail:</strong>
-                    <input type="text" name="detail"  class="form-control" placeholder="Name">
+                    <input type="text" name="detail"  class="form-control" placeholder="Detail">
+                   
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Line Token:</strong>
+                    <input type="text" name="line_token"  class="form-control" placeholder="Line Token">
+                   
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Facebook ID:</strong>
+                    <input type="text" name="facebook_token"  class="form-control" placeholder="Facebook_token">
+                   
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Email:</strong>
+                    <input type="text" name="email"  class="form-control" placeholder="Email">
                    
                 </div>
             </div>

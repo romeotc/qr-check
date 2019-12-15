@@ -30,12 +30,41 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Custom Components:</h6>
             <a class="collapse-item" href="{{ url('/groups') }}">Manage Group</a>
-            <a class="collapse-item" href="#">Cards</a>
+            <a class="collapse-item" href="#">Export Cards</a>
           </div>
         </div>
 
         
+      </li>
+            <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTree" aria-expanded="true" aria-controls="collapseTwo">
+          <i class="fas fa-fw fa-user-check"></i>
+          <span>Track</span>
+        </a>
+        <div id="collapseTree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Custom Components:</h6>
+            <a class="collapse-item" href="{{ url('/groups') }}">Tracking QRcode</a>
+            <a class="collapse-item" href="{{ url('/track/manual') }}">Checking Manual</a>
+          </div>
+        </div>
+    
+        
+      </li>
 
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseTwo">
+          <i class="fas fa-fw fa-tools"></i>
+          <span>Setting</span>
+        </a>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Custom Components:</h6>
+            <a class="collapse-item" href="{{ url('/groups') }}">Tracking QRcode</a>
+            <a class="collapse-item" href="{{ url('/track/manual') }}">Checking Manual</a>
+          </div>
+        </div>
+    
         
       </li>
 

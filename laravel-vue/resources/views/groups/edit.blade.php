@@ -42,6 +42,27 @@
                     
                 </div>
             </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Line Token:</strong>
+                    <input type="text" name="line_token" value="{{ $group->line_token }}" class="form-control text-success" placeholder="Line Token">
+                   
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Facebook ID:</strong>
+                    <input type="text" name="facebook_token" value="{{ $group->facebook_token }}" class="form-control" placeholder="Facebook_token">
+                   
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Email:</strong>
+                    <input type="text" name="email" value="{{ $group->email }}" class="form-control" placeholder="Email">
+                   
+                </div>
+            </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
               <button type="submit" class="btn btn-primary">Submit</button>
             </div>

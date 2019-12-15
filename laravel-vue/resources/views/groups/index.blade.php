@@ -42,6 +42,7 @@
                 <th>No</th>
                 <th>Name</th>
                 <th>Details</th>
+                <th>Line</th>
                 <th >Action</th>
             </tr>
         </thead>
@@ -50,6 +51,7 @@
             <td>{{ ++$i }}</td>
             <td>{{ $group->name }}</td>
             <td>{{ $group->detail }}</td>
+            <td>{{ $group->line_token }}</td>
             <td>
                 <form action="{{ route('groups.destroy',$group->id) }}" method="POST">
                     <a class="btn btn-info" href="{{ route('groups.show',$group->id) }}">Show</a>
@@ -69,4 +71,3 @@
     {!! $groups->links() !!}
 
 @endsection
-14-12-62

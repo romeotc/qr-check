@@ -18,6 +18,9 @@ class CreateGroupsTable extends Migration
             $table->string('name', 100)->charset('utf8')->default(0);
             $table->string('userid',10)->charset('utf8')->default(0);
             $table->string('detail',100)->charset('utf8')->default(0);
+            $table->string('line_token',100)->charset('utf8')->nullable();
+            $table->string('facebook_token',100)->charset('utf8')->nullable();
+            $table->string('email',100)->charset('utf8')->nullable();
             $table->timestamps();
         });
     }
