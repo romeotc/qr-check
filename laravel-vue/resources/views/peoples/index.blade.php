@@ -5,6 +5,7 @@
      
 
 
+
 <div class="row">
         <div class="col-md-5 margin-tb">
             
@@ -31,16 +32,50 @@
             </div>
 
            
-
-
-       
-    
-
-
-
-
-
  </div>
+
+ <br>
+
+@if ($message = Session::get('success'))
+    <div class="alert alert-success">
+        <p>{{ $message }}</p>
+    </div>
+@endif
+
+<table class="table table-bordered  table-hover">
+    <thead class="thead-light">
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Details</th>
+            <th >Action</th>
+        </tr>
+    </thead>
+    @foreach ($peoples as $row)
+    <tr>
+        <td>{{ ++$i }}</td>
+        <td>{{ $row->name }} {{ $row->lastname }} </td>
+        <td>{{ $row->detail }}</td>
+        <td>
+        <form action="{{ route('peoples.destroy',['groupid'=>$groups->id,'people'=>$row->id]) }}" method="POST">
+                   
+                
+                    <a class="btn btn-primary" href="{{ route('peoples.edit',['groupid'=>$groups->id,'people'=>$row->id]) }}">Edit</a>
+
+                    @csrf
+                    @method('DELETE')
+
+                    <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>
+                </form>
+        </td>
+    </tr>
+    @endforeach
+</table>
+
+
+{!! $peoples->links() !!}
+
+
 
 @endsection
 

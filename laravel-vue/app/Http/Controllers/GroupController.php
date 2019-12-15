@@ -13,7 +13,7 @@ class GroupController extends Controller
     {
        
         $groups = Group::where('userid',\Auth::id() )->latest()->paginate(5);
-
+        
         return view('groups.index',compact('groups') )
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
@@ -24,6 +24,7 @@ class GroupController extends Controller
        
         $search = $request->get('search');
         $groups = Group::where('name', 'like', '%'.$search.'%')->paginate(5);
+        
         return view('groups.index',compact('groups'))
         ->with('i', (request()->input('page', 1) - 1) * 5);
        

@@ -30,8 +30,8 @@
          <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>ID:</strong>
-                    <input type="text" name="groupid" class="form-control" placeholder="groupid" value="{{ $groupid->id}}">
-                    <input type="text" name="peopleid" class="form-control" placeholder="Name">
+                    <input type="hidden" name="groupid" class="form-control" placeholder="groupid" value="{{ $groupid->id}}">
+                    <input type="text" name="peopleid" class="form-control" placeholder="ID">
                    
                 </div>
             </div>
@@ -57,6 +57,17 @@
                     <strong>Lastname:</strong>
                     <input type="text" name="lastname"  class="form-control" placeholder="Lastname">
                    
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Detail:</strong>
+                    <input type="text" name="detail"  class="form-control" placeholder="detail">
+                    <input type="hidden" name="title"  class="form-control" placeholder="detail" value="1">
+                    <input type="hidden" name="status"  class="form-control" placeholder="detail" value="1">
+                    <input type="hidden" name="track_status"  class="form-control" placeholder="detail" value="1">
+                    <input type="hidden" name="sex"  class="form-control" placeholder="detail" value="1">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
